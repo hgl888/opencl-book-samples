@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048EE3621D813BF800993BAC /* HelloWorld.cl in Sources */ = {isa = PBXBuildFile; fileRef = 048EE3611D813BF800993BAC /* HelloWorld.cl */; };
 		04D2510D1D81363200F30C4F /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D2510C1D81363200F30C4F /* HelloWorld.cpp */; };
 		C3770EFD0E6F1138009A5A77 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3770EFC0E6F1138009A5A77 /* OpenCL.framework */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		048EE3611D813BF800993BAC /* HelloWorld.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = HelloWorld.cl; sourceTree = "<group>"; };
 		04D2510C1D81363200F30C4F /* HelloWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorld.cpp; sourceTree = "<group>"; };
 		466E0F5F0C932E1A00ED01DB /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3770EFC0E6F1138009A5A77 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
@@ -61,6 +63,7 @@
 		C3770EF10E6F10BB009A5A77 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				048EE3611D813BF800993BAC /* HelloWorld.cl */,
 				04D2510C1D81363200F30C4F /* HelloWorld.cpp */,
 			);
 			name = Sources;
@@ -84,6 +87,7 @@
 				466E0F5C0C932E1A00ED01DB /* Sources */,
 				466E0F5D0C932E1A00ED01DB /* Frameworks */,
 				C39444690DAFF5A0008FFE68 /* CopyFiles */,
+				048EE35E1D813BB300993BAC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -121,11 +125,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		048EE35E1D813BB300993BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		466E0F5C0C932E1A00ED01DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048EE3621D813BF800993BAC /* HelloWorld.cl in Sources */,
 				04D2510D1D81363200F30C4F /* HelloWorld.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +182,8 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../lib\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = HelloWorld;
+				SDKROOT = macosx;
+				SYMROOT = build;
 				ZERO_LINK = YES;
 			};
 			name = Debug;
@@ -186,6 +203,8 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../lib\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = HelloWorld;
+				SDKROOT = macosx;
+				SYMROOT = build;
 				ZERO_LINK = NO;
 			};
 			name = Release;
